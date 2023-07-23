@@ -87,6 +87,13 @@ html {
     border-radius: 8px;
     box-shadow: 0 3px 6px hsla(0, 0%, 79%, .5);
     text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.movie_grid_card_container a:hover {
+    text-decoration: none;
+    color: #000000;
 }
 
 .movie_grid_card_container img {

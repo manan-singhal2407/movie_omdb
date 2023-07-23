@@ -31,6 +31,7 @@ function renderMoviesInGridLayout() {
 
         const movieCardElement = document.createElement("a");
         movieCardElement.setAttribute("role", "presentation");
+        movieCardElement.setAttribute("href", `movieDetail.html?imdbID=${movie.imdbID}`)
 
         const posterElement = document.createElement("img");
         posterElement.src = movie.Poster;

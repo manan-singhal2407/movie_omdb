@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Guardians of the Galaxy Vol. 2</title>
+    <title>Movie Name</title>
     <link rel="stylesheet" href="styles/movieDetail.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,45 +16,40 @@
 <body>
     <div class="page_container">
         <div class="movies_detail_container">
-            <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg"
-                alt="Movie Poster">
+            <img alt="Movie Poster" id="movie_poster_image">
             <div class="movies_text_info_container">
-                <h1>Guardians of the Galaxy Vol. 2</h1>
-                <h2>Movie &nbsp; | &nbsp; Action, Adventure, Comedy &nbsp; | &nbsp; 05 May 2017</h2>
-                <h3>136 min &nbsp; | &nbsp; PG-13 &nbsp; | &nbsp; 7.6/10 on IMDb</h3>
-                <h4>The Guardians struggle to keep together as a team while dealing with their personal family issues,
-                    notably Star-Lord's encounter with his father, the ambitious celestial being Ego.
-                </h4>
+                <h1 id="movie_title_text"></h1>
+                <h2 id="movie_type_text"></h2>
+                <h3 id="movie_rating_text"></h3>
+                <h4 id="movie_description_text"></h4>
                 <p>
                     <span style="color: black;">Director: </span>
-                    <span style="color: #5a5a5a;">James Gunn</span>
+                    <span style="color: #5a5a5a;" id="movie_director_text"></span>
                 </p>
                 <p>
                     <span style="color: black;">Writer: </span>
-                    <span style="color: #5a5a5a;">James Gunn, Dan Abnett, Andy Lanning</span>
+                    <span style="color: #5a5a5a;" id="movie_writer_text"></span>
                 </p>
                 <p>
                     <span style="color: black;">Actors: </span>
-                    <span style="color: #5a5a5a;">Chris Pratt, Zoe Saldana, Dave Bautista</span>
+                    <span style="color: #5a5a5a;" id="movie_actors_text"></span>
                 </p>
                 <h3 style="color: blueviolet;">Rating</h3>
-                <div class="movies_text_rating_container">
-                    <input type="radio" name="rating" id="star1" value="1" />
-                    <label for="star1" title="1 star">&#9733;</label>
-                    <input type="radio" name="rating" id="star2" value="2" />
-                    <label for="star2" title="2 stars">&#9733;</label>
-                    <input type="radio" name="rating" id="star3" value="3" />
-                    <label for="star3" title="3 stars">&#9733;</label>
-                    <input type="radio" name="rating" id="star4" value="4" />
-                    <label for="star4" title="4 stars">&#9733;</label>
-                    <input type="radio" name="rating" id="star5" value="5" />
-                    <label for="star5" title="5 stars">&#9733;</label>
-                </div>
+                <div class="movies_rating_container" data-rating="0">
+                    <span class="movies_rating_container_star" data-value="1">&#9733;</span>
+                    <span class="movies_rating_container_star" data-value="2">&#9733;</span>
+                    <span class="movies_rating_container_star" data-value="3">&#9733;</span>
+                    <span class="movies_rating_container_star" data-value="4">&#9733;</span>
+                    <span class="movies_rating_container_star" data-value="5">&#9733;</span>
+                  </div>
                 <h3 style="color: blueviolet;">Comment</h3>
+                <h4 id="movies_text_comment"></h4>
                 <textarea class="movies_text_comment_container"></textarea>
+                <button id="movies_rating_comment_post">Post - Rating and comment will be added on clicking this button</button>
             </div>
         </div>
     </div>
+    <script src="scripts/movieDetail.js" type="module"></script>
 </body>
 
 </html>

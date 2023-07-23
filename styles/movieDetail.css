@@ -31,6 +31,7 @@ html {
 
 .movies_detail_container img {
     width: 300px;
+    height: 440px;
     border-radius: 8px;
     box-shadow: 0 3px 6px hsla(0, 0%, 79%, .5);
 }
@@ -45,6 +46,7 @@ html {
     font-family: var(--font-family-heading);
     font-size: 36px;
     font-weight: 700;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -80,47 +82,22 @@ html {
     margin-bottom: 0;
 }
 
-/* Hide radio buttons */
-/* input[type="radio"] {
-    display: none;
-  }
-  
-  /* Style the stars */
-  /* label {
-    font-size: 30px;
-    color: #ccc;
+.movies_rating_container {
+    font-size: 32px;
     cursor: pointer;
+}
+
+.movies_rating_container_star {
+    color: gray;
     transition: color 0.2s;
-  }
-  
-  /* Color the stars based on selection */
-  /* input[type="radio"]:checked ~ label {
-    color: blueviolet;
-  } */
-  
-  /* Add spacing between stars */
-  /* label + input[type="radio"] {
-    margin-left: 5px;
-  } */ */ */
-
-.movies_text_rating_container {
-    display: flex;
-    /* flex-direction: row-reverse; */
 }
 
-.movies_text_rating_container input[type="radio"] {
-    display: none;
-}
-
-.movies_text_rating_container input[type="radio"]:checked ~ label {
-    color: rgb(196, 196, 9);
-}
-
-.movies_text_rating_container label {
-    font-size: 30px;
-    color: #cccccc;
-    cursor: pointer;
-    transition: color 0.2s;
+.movies_rating_container[data-rating="1"] .movies_rating_container_star:nth-child(-n + 1),
+.movies_rating_container[data-rating="2"] .movies_rating_container_star:nth-child(-n + 2),
+.movies_rating_container[data-rating="3"] .movies_rating_container_star:nth-child(-n + 3),
+.movies_rating_container[data-rating="4"] .movies_rating_container_star:nth-child(-n + 4),
+.movies_rating_container[data-rating="5"] .movies_rating_container_star:nth-child(-n + 5) {
+    color: gold;
 }
 
 .movies_text_comment_container {
@@ -137,4 +114,20 @@ html {
     margin-right: 10px;
     color: #5a5a5a;
     resize: none;
+}
+
+.movies_detail_container button {
+    width: 500px;
+    height: 32px;
+    color: #ffffff;
+    margin: 20px 0;
+    background: #E46962;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px 16px;
+    outline: none;
 }
