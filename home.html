@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie List - OMDb</title>
+    <link rel="stylesheet" href="styles/home.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page_container">
+        <div class="nav_container">
+            <div class="nav_container_search_box">
+                <input type="text" placeholder="Search movies..." id="search_input_field"/>
+                <button id="search_button">Search</button>
+            </div>
+        </div>
+        <div>
+            <div class="movie_grid_container"></div>
+        </div>
+        <div class="movie_pagination">
+            <button>Previous</button>
+            <span class="movie_pagination_numbers">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <span>3</span>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </span>
+            <button>Next</button>
+        </div>
+    </div>
+    <script src="scripts/home.js" type="module"></script>
+</body>
+
+</html>
