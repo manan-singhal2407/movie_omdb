@@ -131,3 +131,58 @@ html {
     padding: 4px 16px;
     outline: none;
 }
+
+@media (max-width:767px) {
+    .movies_detail_container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .movies_text_info_container {
+        align-items: center;
+        width: 100%;
+        margin: 15px;
+    }
+
+    .movies_text_info_container h1 {
+        font-size: 22px;
+        align-items: center;
+    }
+
+    .movies_text_info_container h2 {
+        font-size: 18px;
+        align-items: center;
+    }
+
+    .movies_text_info_container h3 {
+        font-size: 17px;
+        align-items: center;
+    }
+
+    .movies_text_info_container h4 {
+        font-size: 15px;
+        align-items: center;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .movies_text_info_container p {
+        font-size: 13px;
+        align-items: center;
+    }
+
+    .movies_rating_container {
+        font-size: 24px;
+    }
+
+    .movies_text_comment_container {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .movies_detail_container button {
+        width: 100%;
+    }
+}

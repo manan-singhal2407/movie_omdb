@@ -37,7 +37,7 @@ html {
 }
 
 .nav_container_search_box input {
-    width: 240px;
+    width: 220px;
     height: 40px;
     padding: 10px;
     border: 2px solid #aaaaaa;
@@ -150,4 +150,26 @@ html {
     margin: 0 5px;
     text-decoration: none;
     color: #000000;
+}
+
+@media (max-width:767px) {
+    .nav_container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .movie_grid_container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .movie_grid_card_container {
+        width: 175px;
+    }
+
+    .movie_grid_card_container img {
+        width: 175px;
+        height: 260px;
+    }
 }
