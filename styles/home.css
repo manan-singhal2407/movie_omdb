@@ -130,6 +130,7 @@ html {
 
 .movie_pagination_numbers a {
     text-decoration: none;
+    cursor: pointer;
     margin: 0 5px;
     color: #aaaaaa;
     font-weight: 500;
@@ -139,7 +140,7 @@ html {
     font-family: var(--font-family-heading);
     font-size: 16px;
     font-weight: 700;
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
     color: #000000;
 }
